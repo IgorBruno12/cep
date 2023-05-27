@@ -5,12 +5,17 @@
     --cor-botao:#04ad5e;
 }
 
-html{
-    height: 100vh;
+/*corpo*/
+.body-escuro{
+    background-color: var(--cor-de-fundo);
 }
 
-body{
-    background-color: var(--cor-de-fundo);
+html{
+    height: 100%;
+}
+
+.body-claro{
+    background-color: var(--cor-de-fundo) !important;
 }
 
 
