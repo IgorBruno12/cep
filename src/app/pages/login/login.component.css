@@ -108,3 +108,11 @@ body{
     text-decoration: none;
     color: #00ff88;
 }
+
+/*mensagem erro*/
+
+.mensagem-erro{
+    font-size: 14px;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}

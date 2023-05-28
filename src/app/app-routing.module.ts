@@ -4,14 +4,19 @@ import { LoginComponent } from './pages/login/login.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 
 const routes: Routes = [
+  
   {
-    path:'index',component:LoginComponent
+    path:"",
+    pathMatch:"full",
+    redirectTo:"login"
+  },
+  {
+    path:"index",component:LoginComponent
   },
   {
     path:'cadastro',component:CadastroComponent
   }
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
