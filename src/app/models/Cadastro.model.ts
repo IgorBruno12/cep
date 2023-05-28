@@ -1,5 +1,5 @@
-export interface adm{
-    id:number;
-    senha:number;
-    usuario:string;
+export class Administrador{
+    id?: string;
+    senha?: number;
+    usuario?: string;
 }
