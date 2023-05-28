@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "progeto-cep": {
+    "projeto-cep": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/progeto-cep",
+            "outputPath": "dist/projeto-cep",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "progeto-cep:build:production"
+              "browserTarget": "projeto-cep:build:production"
             },
             "development": {
-              "browserTarget": "progeto-cep:build:development"
+              "browserTarget": "projeto-cep:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "progeto-cep:build"
+            "browserTarget": "projeto-cep:build"
           }
         },
         "test": {

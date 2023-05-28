@@ -19,21 +19,21 @@
             <div id="b_login">
 
                 <h2 class="h2-2">Cadastro</h2>
-                
+
                 <!-- formulario cadastro -->
 
-                <form class="form-2" (ngSubmit)="cadastroAdm(formCad)">
+                <form class="form-2">
                     <div class="usuario-senha">
                         <label for="name" class="form-label"></label>
-                        <input formArrayName="usuario" type="name" class="form-control w-100" placeholder="Nome" name="nome" id="name">
+                        <input type="name" class="form-control w-100" placeholder="Nome" name="nome" id="name" required [(ngModel)]="admin.usuario">
 
                         <label for="password" class="form-label"></label>
-                        <input formArrayName="senha" type="password" class="form-control w-100" aria-describedby="passwordHelpBlock" id="password" name="senha" placeholder="Senha">
+                        <input type="password" class="form-control w-100" aria-describedby="passwordHelpBlock" id="password" name="senha" placeholder="Senha" required [(ngModel)]="admin.senha">
 
                     </div>
 
                     <div id="login">
-                        <button type="submit" name="submit" class="btn btn-primary btn-lg JUS w-100 botao-loguin">Cadastrar</button>
+                        <button type="submit" name="submit" class="btn btn-primary btn-lg JUS w-100 botao-loguin" (click)="cadastroAdm()">Cadastrar</button>
                     </div>
                 </form>
                 <div class="cadastro">
@@ -41,6 +41,6 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 </body>
 </html>
